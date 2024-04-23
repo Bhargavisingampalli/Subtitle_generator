@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subtitle Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="background-image">
+  <div class="container">
+    <h1>Subtitle Generator</h1>
+    <div id="loading" class="loading"></div>
+    <form id="uploadForm">
+      <label for="file">Upload Audio/Video:</label>
+      <input type="file" id="file" name="file">
+      <label for="language">Select Language:</label>
+      <select id="language" name="language">
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+      </select>
+      <button type="submit">Generate Subtitle</button>
+    </form>
+    <div id="progress" class="progress"></div>
+    <div id="convertedText" class="converted-text"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

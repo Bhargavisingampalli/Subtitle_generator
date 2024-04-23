@@ -1,0 +1,99 @@
+body {
+    font-family: Playfair;
+    margin: 0;
+    padding: 0;
+    background-image: url('download (2).png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+#uploadForm label,
+#uploadForm button,
+#uploadForm input[type="file"],
+#uploadForm select {
+  font-size: 20px;
+}
+#uploadForm label[for="file"],
+#uploadForm label[for="language"] {
+  font-size: 40px;
+  font-style: playright;
+    color: #affcffcf;
+}
+
+#convertedText {
+    font-size: 25px; 
+    margin-top: 10px;
+    font-style: playright;
+    line-height:1.5;
+  }
+  
+  /* Add gap between loading bar and generated subtitle */
+  #progress {
+    margin-bottom: 20px; 
+  }
+
+#uploadForm label[for="language"] {
+    margin-top: 30px; 
+  }
+.container {
+    max-width: 800px;
+    margin: 0; 
+    padding: 30px;
+    color: white; 
+    text-align: left; 
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #affcffcf, #edfffc2b);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+
+
+.loading {
+    display: none;
+    margin-bottom: 20px;
+}
+
+form {
+    font-size:40px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+input[type="file"],
+select {
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3ca4eb;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3ca4eb;
+}
+
+.progress {
+    display: none;
+    margin-top: 15px;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 15px;
+    background-color: #3ca4eb;
+}
